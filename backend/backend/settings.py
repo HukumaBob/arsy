@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'rest_framework',
     'djoser',
+    'django_celery_results',
     'api',
     'threedmodels',
 ]
@@ -138,6 +139,8 @@ CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TIMEZONE = 'UTC'
 CELERYD_SOFT_TIME_LIMIT = 30
 CELERYD_TASK_TIME_LIMIT = 120
+CELERY_RESULT_BACKEND = 'django-db'
+CELERY_CACHE_BACKEND = 'django-cache'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
