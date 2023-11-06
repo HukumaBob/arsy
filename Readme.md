@@ -1,4 +1,4 @@
-# Picasso Test Project
+# ARSY Project
 
 ## Table of Contents
 - [Introduction](#introduction)
